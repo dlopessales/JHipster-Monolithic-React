@@ -1,0 +1,15 @@
+version: '2'
+services:
+    jhipstermonolithicreact-app:
+        image: jhipstermonolithicreact
+        environment:
+            - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://jhipstermonolithicreact-mysql:3306/jhipstermonolithicreact?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    jhipstermonolithicreact-mysql:
+        extends:
+            file: mysql.yml
+            service: jhipstermonolithicreact-mysql
