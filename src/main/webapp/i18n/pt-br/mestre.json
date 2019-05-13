@@ -1,0 +1,22 @@
+{
+  "jHipsterMonolithicReactApp": {
+    "mestre": {
+      "home": {
+        "title": "Mestres",
+        "createLabel": "Criar novo Mestre",
+        "createOrEditLabel": "Criar ou editar Mestre"
+      },
+      "created": "Um novo Mestre foi criado com o identificador {{ param }}",
+      "updated": "Um Mestre foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Mestre foi deletado com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Mestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Mestre"
+      },
+      "descricao": "Descricao",
+      "detalhe": "Detalhe"
+    }
+  }
+}

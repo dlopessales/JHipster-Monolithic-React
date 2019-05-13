@@ -1,0 +1,35 @@
+{
+    "name": "Detalhe",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "data",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "tipo",
+            "fieldType": "Tipo",
+            "fieldValues": "A,B,C"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "mestre",
+            "otherEntityName": "mestre",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190509185931",
+    "entityTableName": "detalhe",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

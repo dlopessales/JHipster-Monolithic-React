@@ -1,0 +1,24 @@
+{
+  "jHipsterMonolithicReactApp": {
+    "detalhe": {
+      "home": {
+        "title": "Detalhes",
+        "createLabel": "Criar novo Detalhe",
+        "createOrEditLabel": "Criar ou editar Detalhe"
+      },
+      "created": "Um novo Detalhe foi criado com o identificador {{ param }}",
+      "updated": "Um Detalhe foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Detalhe foi deletado com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Detalhe {{ id }}?"
+      },
+      "detail": {
+        "title": "Detalhe"
+      },
+      "nome": "Nome",
+      "data": "Data",
+      "tipo": "Tipo",
+      "mestre": "Mestre"
+    }
+  }
+}

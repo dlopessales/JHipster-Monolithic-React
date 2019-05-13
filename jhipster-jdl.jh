@@ -1,0 +1,26 @@
+entity Mestre {
+	descricao String
+}
+
+entity Detalhe {
+	nome String,
+    data Instant,
+    tipo Tipo
+}
+
+relationship OneToMany {
+	Mestre{detalhe} to Detalhe
+}
+
+enum Tipo {
+    A, B, C
+}
+
+// Set pagination options
+paginate Mestre, Detalhe with pagination
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

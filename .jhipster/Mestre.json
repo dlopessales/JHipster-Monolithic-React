@@ -1,0 +1,26 @@
+{
+    "name": "Mestre",
+    "fields": [
+        {
+            "fieldName": "descricao",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "detalhe",
+            "otherEntityRelationshipName": "mestre",
+            "relationshipName": "detalhe"
+        }
+    ],
+    "changelogDate": "20190509185930",
+    "entityTableName": "mestre",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
